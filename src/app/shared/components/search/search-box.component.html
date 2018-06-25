@@ -1,0 +1,24 @@
+<div class="filter">
+  <form [formGroup]="searchForm" (ngSubmit)="search(searchForm.value)">
+    <div class="form-input">
+      <input type="text" formControlName="originCity" placeholder="Enter Origin City" />
+    </div>
+    <div class="form-input">
+      <input type="text" formControlName="destinationCity" placeholder="Enter Destination City" />
+    </div>
+    <div class="form-input">
+      <input placeholder="Departure date" formControlName="departureDate" [owlDateTimeTrigger]="departureDate" [owlDateTime]="departureDate">
+      <owl-date-time [pickerType]="'calendar'" #departureDate></owl-date-time>
+    </div>
+    <div class="form-input">
+      <input placeholder="Return date" formControlName="returnDate" [owlDateTimeTrigger]="returnDate" [owlDateTime]="returnDate">
+      <owl-date-time [pickerType]="'calendar'" #returnDate></owl-date-time>
+    </div>
+    <div class="form-input">
+      <input type="number" formControlName="passengers" placeholder="Passengers" />
+    </div>
+    <div class="form-input">
+      <button class="button">Search</button>
+    </div>
+  </form>
+</div>

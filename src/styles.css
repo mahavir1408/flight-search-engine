@@ -1,0 +1,6 @@
+/* You can add global styles to this file, and also import other style files */
+@import "assets/css/tabbed-panels.css";
+@import "assets/css/main.css";
+@import "assets/css/custom.css";
+@import "node_modules/ng-pick-datetime/assets/style/picker.min.css";
+@import "node_modules/nouislider/distribute/nouislider.min.css";

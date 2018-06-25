@@ -1,0 +1,21 @@
+<section class="main-container-head">
+  <div class="grid">
+    <div class="row group m-0">
+      <div class="seven columns fl breadcrumb">
+        <span *ngIf="flightSearchObject.travelMode === 'one-way'">
+          {{flightSearchObject.originCity | titlecase}} &raquo; {{flightSearchObject.destinationCity | titlecase}}
+        </span>
+        <span *ngIf="flightSearchObject.travelMode === 'return'">
+            {{flightSearchObject.originCity | titlecase}} &raquo; {{flightSearchObject.destinationCity | titlecase}} &raquo; {{flightSearchObject.originCity | titlecase}}
+        </span>
+      </div>
+      <div class="three columns">
+        <div class="search-date fl">
+          <div *ngIf="flightSearchObject.departureDate">Depart: {{flightSearchObject.departureDate}}</div>
+          <div *ngIf="flightSearchObject.returnDate">Return: {{flightSearchObject.returnDate}}</div>
+        </div>
+      </div>
+      <div class="clearfx"></div>
+    </div>
+  </div>
+</section>

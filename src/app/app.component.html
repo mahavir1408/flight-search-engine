@@ -1,0 +1,15 @@
+<div class="container">
+  <ng-header></ng-header>
+  <div class="grid">
+    <div class="row group">
+      <aside class="five columns sidebar">
+        <ng-search-tab></ng-search-tab>
+        <ng-search-range (emitSearchRangeData)="searchRangeData($event)"></ng-search-range>
+      </aside>
+      <div class="eleven columns main-container">
+        <ng-search-details></ng-search-details>
+        <ng-flight-listing></ng-flight-listing>
+      </div>
+    </div>
+  </div>
+</div>

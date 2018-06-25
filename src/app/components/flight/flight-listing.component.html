@@ -1,0 +1,6 @@
+<section>
+  <div class="flight-list-info" *ngIf="flightList?.length === 0">No flights available.</div>
+  <article class="flight-info" *ngFor="let flight of flightList">
+    <ng-flight [flightInfo]="flight"></ng-flight>
+  </article>
+</section>

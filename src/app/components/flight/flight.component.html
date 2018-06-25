@@ -1,0 +1,30 @@
+<div class="grid" *ngIf="flightInfo">
+  <div class="row group">
+    <div class="seven columns">
+      <div class="width-full fl" *ngIf="flightInfo.ticketCost">
+        <h3>Rs. {{flightInfo.ticketCost}}</h3>
+      </div>
+      <div class="width-half fl" [ngClass]="{'width-half': (flightInfo.travelMode === 'return'), 'width-full': (flightInfo.travelMode !== 'return')}">
+        <div>{{flightInfo.code}}</div>
+        <div>{{flightInfo.originCode}} > {{flightInfo.destinationCode}}</div>
+        <div>Depart: {{flightInfo.departureTime}}</div>
+        <div>Arrive: {{flightInfo.arrivalTime}}</div>
+      </div>
+      <div class="width-half fl" *ngIf="flightInfo.travelMode === 'return'">
+        <div>{{flightInfo.returnInfo.code}}</div>
+        <div>{{flightInfo.returnInfo.originCode}} > {{flightInfo.returnInfo.destinationCode}}</div>
+        <div>Depart: {{flightInfo.returnInfo.departureTime}}</div>
+        <div>Arrive: {{flightInfo.returnInfo.arrivalTime}}</div>
+      </div>
+    </div>
+    <div class="three columns">
+      <div class="flight-logo">
+        <img src="/assets/images/logo_placeholder.jpg" />
+      </div>
+      <div class="form-input text-center">
+        <button class="button">Book this flight</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="clearfx"></div>

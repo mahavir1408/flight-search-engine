@@ -1,0 +1,21 @@
+<div class="tabbed">
+  
+    <input name="travelMode" id="one-way" value="one-way" type="radio" (click)="selectedTab('one-way')" checked>
+    <section>
+      <h1>
+        <label for="one-way">One way</label>
+      </h1>
+      <div>
+        <ng-search-box (emitSearchBoxData)="searchBoxData($event)"></ng-search-box>
+      </div>
+    </section>
+    <input name="travelMode" id="return" value="return" type="radio" (click)="selectedTab('return')">
+    <section>
+      <h1>
+        <label for="return">Return</label>
+      </h1>
+      <div>
+        <ng-search-box (emitSearchBoxData)="searchBoxData($event)"></ng-search-box>
+      </div>
+    </section>
+</div>
