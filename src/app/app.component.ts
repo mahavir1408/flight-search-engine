@@ -10,7 +10,7 @@ export class AppComponent {
   constructor(private searchService: SearchService) {
   }
 
-  private searchRangeData(data: any) {
+  public searchRangeData(data: any) {
     this.searchService.setSearchRangeData(data);
   }
 }

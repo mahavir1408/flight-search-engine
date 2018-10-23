@@ -10,9 +10,9 @@ export class SearchRangeComponent implements OnInit {
 
   @Output() emitSearchRangeData: EventEmitter<any> = new EventEmitter<any>();
 
-  private searchForm: any;
+  public searchForm: any;
 
-  private someKeyboardConfig: any = {
+  public someKeyboardConfig: any = {
     behaviour: 'drag',
     connect: true,
     start: [0, 10000],

@@ -1,6 +1,9 @@
 <div class="search-range-box">
   <div class="head">Refine flight search</div>
+  <!--
   <form [formGroup]="searchForm" (change)="search(searchForm.value)">
+  -->
+  <form [formGroup]="searchForm">
     <div class="form-input">
       <nouislider formControlName="flightRange" [config]="someKeyboardConfig"></nouislider>
     </div>

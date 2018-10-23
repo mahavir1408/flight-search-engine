@@ -10,7 +10,7 @@ import * as moment from 'moment';
 })
 export class FlightListingComponent implements OnInit, OnDestroy {
 
-  private flightList: any = [];
+  public flightList: any = [];
   private flightSearchObject: any = {};
   private flightSubscriber: Subscription;
   private defaultRange: any = { range: [0, 10000] };

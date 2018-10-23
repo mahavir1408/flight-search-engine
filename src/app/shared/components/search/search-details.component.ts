@@ -8,7 +8,7 @@ import * as moment from 'moment';
 })
 export class SearchDetailsComponent implements OnInit{
 
-  private flightSearchObject: any = {};
+  public flightSearchObject: any = {};
 
   constructor(
     private searchService: SearchService

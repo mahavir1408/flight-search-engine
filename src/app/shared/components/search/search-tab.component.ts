@@ -17,13 +17,13 @@ export class SearchTabComponent implements OnInit {
     this.searchService.setSearchTabData(this.travelMode);
   }
 
-  private selectedTab(travelMode: String): void {
+  public selectedTab(travelMode: String): void {
     this.travelMode = travelMode;
     this.searchService.setSearchTabData(this.travelMode);
     
   }
 
-  private searchBoxData(data: any) {
+  public searchBoxData(data: any) {
     this.searchService.setSearchBoxData(data);
   }
 }

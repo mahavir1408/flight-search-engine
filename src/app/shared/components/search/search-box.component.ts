@@ -10,7 +10,7 @@ import * as moment from 'moment';
 export class SearchBoxComponent implements OnInit {
 
   @Output() emitSearchBoxData: EventEmitter<any> = new EventEmitter<any>();
-  private searchForm: any;
+  public searchForm: any;
   
   constructor( private formBuilder: FormBuilder ) {
   }
@@ -32,7 +32,7 @@ export class SearchBoxComponent implements OnInit {
     });
   }
 
-  private search(value: any): void {
+  public search(value: any): void {
     this.emitSearchBoxData.emit(value);
   }
 }
