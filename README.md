@@ -6,7 +6,7 @@ search using a slider for prices.
 Prerequisite
 ----
 1. node-8.11.1
-2. npm-6.1.0
+2. npm-6.4.1
 
 # Flight
 
