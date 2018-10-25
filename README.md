@@ -39,8 +39,9 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Hosting Information
 
-[Firebase](https://mahavir-flight-search-engine.firebaseapp.com/)
-[GitHub](https://mahavir1408.github.io/flight-search-engine/)
+- [Firebase](https://mahavir-flight-search-engine.firebaseapp.com/)
+- [GitHub](https://mahavir1408.github.io/flight-search-engine/)
+- [Heroku](https://mahavir-flight-search-engine.herokuapp.com/)
 
 TODO
 ----
